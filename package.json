@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "i": "^0.3.7"
+  },
+  "devDependencies": {
+    "mkdirp": "^3.0.1",
+    "tailwindcss": "^3.4.13"
+  },
+  "name": "estudioyconceptos",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailDev": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/estilos.css --watch",
+    "build": "mkdirp dist && npx tailwindcss -i ./src/css/tailwind.css -o ./dist/css/estilos.css && cp -r src/* dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
